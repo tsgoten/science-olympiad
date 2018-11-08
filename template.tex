@@ -1,21 +1,46 @@
 \documentclass{article}
-\author{SBHS Science Olympiad}
+\author{SBHS Science Olympiad, Tarang}
 \usepackage[margin=.1in, landscape]{geometry}
-\setlength{\columnsep}{.07in}
+\setlength{\columnsep}{.2in}
 \usepackage{amsmath, multicol}
-\usepackage{lscape}
-\usepackage{color}
+\usepackage{xcolor}
+
+% Colors
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\green}[1]{\textcolor{green}{#1}}
-\newcommand{\blue}[1]{\\dfrac{textcolor}{den}{blue}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\pink}[1]{\textcolor{magenta}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+% Headings
+% Note: The order of importance is the ROYGBV
+\newcommand{\mysection}[1]{\textbf{\textit{\red{#1}}}}
+\newcommand{\mysubsection}[1]{{\textit{\orange{#1}}}}
+\newcommand{\mysubsub}[1]{{{\green{#1}}}}
+\newcommand{\mysubsubsub}[1]{{{\blue{#1}}}}
+\newcommand{\vocab}[1]{{\pink{#1}}}
+% Pictures
+
 \begin{document}
-%	\tiny
-	\begin{multicols}{4}
-		%\textbf{\textit{Aquatic Ecology}} 
-			Two types: Lentic and Lotic. \red{Lentic Ecosystems} also know as \textit{lake ecosystem} include ponds, lakes, wetlands. 
-			\green{ponds and pools}:
-			Ponds and pools have their entire bottom exposed to light, while lakes do not. 
-			\textit{Two regions:} \blue{pelagic zone} open water zone, and the \blue{benthic zone}, which comprises the bottom and shore regions. 
-			\green{Lakes}: have an additional zones, the \blue{profundal}. \green{Important abiotic factors}
-	\end{multicols}
+	% Uncomment the line below to modify the font size
+	% \tiny
+	\begin{multicols*}{4}
+		
+		\noindent
+		
+		\mysection{General Ecology} \\
+		Ecology: how organisms interact with one another and with their environment \\
+		Environment: abiotic and biotic features\\
+		\textit{Levels of Organization:} Population (same species) $>$  Community (diff. species, biotic) $>$ Ecosystem (community+abiotic) $>$ Biosphere (portion of Earth w/living species)
+		\\
+		\mysection{Aquatic Ecosystems} \\
+		\mysubsection{Lentic Ecosystems} (STILL Water) \\
+		\mysubsub{Ponds} Bottom of the pond still receives light, unlike lakes.
+		\mysubsub{Horizontal Lake Zones}
+		\mysubsubsub{Littoral Zone}: Near the shoreline; Sunlight penetrates all the way to sediments; Allows for aquatic plants (\vocab{macrophytes}) to grow.
+		\mysubsubsub{Limentic Zone} open water, away from shore.
+		\mysubsub{Vertical Lake Zones}
+		
+		
+	\end{multicols*}
 \end{document}

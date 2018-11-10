@@ -1,9 +1,12 @@
 \documentclass{article}
-\author{SBHS Science Olympiad, Tarang}
 \usepackage[margin=.1in, landscape]{geometry}
 \setlength{\columnsep}{.2in}
 \usepackage{amsmath, multicol}
 \usepackage{xcolor}
+\usepackage{graphicx, wrapfig}
+
+\title{Water Quality Team Gold LISO}
+\author{SBHS Science Olympiad, Tarang}
 
 % Colors
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -12,6 +15,7 @@
 \newcommand{\pink}[1]{\textcolor{magenta}{#1}}
 \newcommand{\orange}[1]{\textcolor{orange}{#1}}
 \newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+
 % Headings
 % Note: The order of importance is the ROYGBV
 \newcommand{\mysection}[1]{\textbf{\textit{\red{#1}}}}
@@ -19,7 +23,19 @@
 \newcommand{\mysubsub}[1]{{{\green{#1}}}}
 \newcommand{\mysubsubsub}[1]{{{\blue{#1}}}}
 \newcommand{\vocab}[1]{{\pink{#1}}}
+
 % Pictures
+\newcommand{\fig}[1]{
+	\includegraphics[width=\linewidth]{#1}
+}
+\newcommand{\figwidth}[2]{
+	\includegraphics[width=#1cm]{#2}
+}
+\newcommand{\figwrap}[3]{
+
+
+}
+
 
 \begin{document}
 	% Uncomment the line below to modify the font size
@@ -27,7 +43,6 @@
 	\begin{multicols*}{4}
 		
 		\noindent
-		
 		\mysection{General Ecology} \\
 		Ecology: how organisms interact with one another and with their environment \\
 		Environment: abiotic and biotic features\\
@@ -36,6 +51,7 @@
 		\mysection{Aquatic Ecosystems} \\
 		\mysubsection{Lentic Ecosystems} (STILL Water) \\
 		\mysubsub{Ponds} Bottom of the pond still receives light, unlike lakes.
+		\fig{lakezones}
 		\mysubsub{Horizontal Lake Zones}
 		\mysubsubsub{Littoral Zone}: Near the shoreline; Sunlight penetrates all the way to sediments; Allows for aquatic plants (\vocab{macrophytes}) to grow.
 		\mysubsubsub{Limentic Zone} open water, away from shore.

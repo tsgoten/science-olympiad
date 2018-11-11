@@ -1,9 +1,8 @@
 \documentclass{article}
 \usepackage[margin=.1in, landscape]{geometry}
 \setlength{\columnsep}{.2in}
-\usepackage{amsmath, multicol}
-\usepackage{xcolor}
-\usepackage{graphicx, wrapfig}
+\usepackage{amsmath, multicol, xcolor}
+\usepackage{graphicx, wrapfig, float}
 
 \title{Water Quality Team Gold LISO}
 \author{SBHS Science Olympiad, Tarang}
@@ -26,10 +25,18 @@
 
 % Pictures
 \newcommand{\fig}[1]{
-	\includegraphics[width=\linewidth]{#1}
+	%file
+	\includegraphics[width=\columnwidth]{#1}
 }
 \newcommand{\figwidth}[2]{
-	\includegraphics[width=#1cm]{#2}
+	%file, width
+	\includegraphics[width=#2cm]{#1}
+}
+\newcommand{\figwrap}[4]{
+	%file, width, height, side
+	\begin{wrapfigure}[#3]{#4}[0pt]{#2cm}
+		\includegraphics[width=\linewidth]{#1}
+	\end{wrapfigure}
 }
 
 \begin{document}
@@ -46,11 +53,12 @@
 		\mysection{Aquatic Ecosystems} \\
 		\mysubsection{Lentic Ecosystems} (STILL Water) \\
 		\mysubsub{Ponds} Bottom of the pond still receives light, unlike lakes.
-		\fig{lakezones}
+		\figwrap{lakezones}{4}{8}{r}
 		\mysubsub{Horizontal Lake Zones}
 		\mysubsubsub{Littoral Zone}: Near the shoreline; Sunlight penetrates all the way to sediments; Allows for aquatic plants (\vocab{macrophytes}) to grow.
 		\mysubsubsub{Limentic Zone} open water, away from shore.
-		\mysubsub{Vertical Lake Zones}
+		\mysubsub{Vertical Lake Zones} 
+		\fig{lakezones}
 		
 		
 	\end{multicols*}
